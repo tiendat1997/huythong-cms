@@ -13,7 +13,7 @@ module.exports = {
     },
     beforeUpdate(event) {
         const { data } = event.params;
-        if (data.name ) {
+        if (data.name) {
             const slug = data.name;
             data.slug = slugify(slug, { lower: true });
         }
